@@ -93,10 +93,6 @@ a {
     outline: none;
 }
 
-a:hover {
-    color: var(--background);
-    background: var(--orange);
-}
 
 form h1 {
     padding-left: 0.125rem;
