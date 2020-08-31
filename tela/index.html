@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+}
+
+#wazebt {
+  display: block;
+  position: fixed;
+  top: 140px;
+  left: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: crosshair;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#wazebt:hover {
+  background-color: #555;
+}
+
+#webbt {
+  display: block;
+  position: fixed;
+  top: 200px;
+  left: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: crosshair;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#webbt:hover {
+  background-color: #555;
+}
+
+#graphbt {
+  display: block;
+  position: fixed;
+  top: 260px;
+  left: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: crosshair;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#graphbt:hover {
+  background-color: #555;
+}
+
+#imagembt {
+  display: block;
+  position: fixed;
+  top: 320px;
+  left: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: crosshair;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#imagembt:hover {
+  background-color: #555;
+}
+
+#videobt {
+  display: block;
+  position: fixed;
+  top: 380px;
+  left: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: crosshair;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#videobt:hover {
+  background-color: #555;
+}
+
+#homebt {
+  display: block;
+  position: fixed;
+  bottom: 20px;
+  left: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: crosshair;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#homebt:hover {
+  background-color: #555;
+}
+
+.div {
+color: black;
+}
+
+</style>
+</head>
+<body>
+
+<a href="tela/waze.html" id="wazebt" title="Go to top">Waze</a>
+<a href="tela/g1.html"  id="webbt" title="Go to top">G1</a>
+<a href="tela/graph.html"  id="graphbt" title="Go to top">Gráfico</a>
+<a href="tela/imagem.html"  id="imagembt" title="Go to top">Imagem</a>
+<a href="tela/video.html"  id="videobt" title="Go to top">Video</a>
+<a href="tela/index.html"  id="homebt" title="Go to top">Home</a>
+
+
+
+   <iframe src="https://embed.waze.com/iframe?zoom=14&lat=-23.498593&lon=-47.454071&ct=livemap" width="1920" height="1080" frameborder="0" allowfullscreen></iframe>
+
+<script>
+function demo() {
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      document.getElementById("demo").innerHTML =
+      this.responseText;
+    }
+  };
+  xhttp.open("GET", "demo.txt", true);
+  xhttp.send();
+}
+
+function waze() {
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      document.getElementById("demo").innerHTML =
+      this.responseText;
+    }
+  };
+  xhttp.open("GET", "waze.txt", true);
+  xhttp.send();
+}
+
+</script>
+
+</body>
+</html>
+
+
